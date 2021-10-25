@@ -1,0 +1,18 @@
+<h1><%= @venue.name %></h1>
+<% if @venue.image.present? %>
+ <%= image_tag @venue.image %>
+<% end %>
+
+<p><%= @venue.address%></p>
+<p><%= @venue.phone%></p>
+<a href="<%= @venue.website %>">Visit Site</a>
+<a href="<%= @venue.insta %>">Instagram</a>
+<% if @venue.logo.present? %>
+  <%= image_tag @venue.logo %>
+<% end %>
+<% if @current_user == @venue.user %>
+  <%= link_to "Edit", edit_venue_path %>
+  <% if @current_user.admin? %>
+    <%= link_to "Delete", @venue, :method => 'delete', :data => {:confirm => "Confirm you want to delete #{@venue.name}"} %>
+  <% end %>
+<% end %>
