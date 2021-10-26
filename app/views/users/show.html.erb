@@ -1,8 +1,9 @@
 <h1>USER DETAILS</h1>
 <ul>
-<% for @user.each do |inf| %>
-<li> <%= inf.name %> </li>
-<li> <%= inf.email %> </li>
-<% end %>
+  <li> Name: <%= @user.name %> </li>
+  <li> Email: <%= @user.email %> </li>
+  <% @current_user.venues.each do |venue| %>
+  <li> Venue owned: <%= link_to venue.name, venue %> </li>
+  <% end %>
 </ul>
-<h2>TO UPDATE DETAILS FORM COMING SOON</h2>
+<%= link_to 'Edit Details', edit_user_path %>

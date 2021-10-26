@@ -1,2 +1,12 @@
-<h1>Menus#show</h1>
-<p>Find me in app/views/menus/show.html.erb</p>
+<h1> <%= @menu.item %> </h1>
+<% if @menu.image.present? %>
+  <%= image_tag @menu.image %>
+<% end %>
+<p> <%= @menu.description %></p>
+<p>Price: <%= number_to_currency(@menu.price)%></p>
+<nav>
+  <% if @current_user == @menu.venue.user %>
+  <%= link_to "Edit", edit_menu_path %>
+  <%= link_to "Delete", @menu, :method => 'delete', :data => {:confirm => "Confirm you want to delete #{@menu.item}"}  %>
+  <% end %>
+</nav>

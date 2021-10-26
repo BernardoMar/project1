@@ -13,8 +13,17 @@ class VenuesController < ApplicationController
 
   def create
     @venue = Venue.create venue_params
-    @current_user.venues << venue
+    @current_user.venues << @venue
     redirect_to venues_path
+  end
+  
+  def create_review
+    @venue = Venue.find params[:id]
+    @review = @venue.review.build(params[:venue_id])
+    if @review.save
+      @review = Review.new
+    end
+    render :action => :show
   end
 
   def edit
@@ -26,7 +35,7 @@ class VenuesController < ApplicationController
 
   def update
     @venue = Venue.find params[:id]
-    venue.update venue_params
+    @venue.update venue_params
     redirect_to venue_path
   end
 

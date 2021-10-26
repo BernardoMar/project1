@@ -10,21 +10,23 @@
   </head>
 
   <body>
-    <nav>
-      <%= link_to 'Home', root_path %>
-      <%= link_to 'Venues', venues_path %>
-      <% if @current_user.present? %>
-        <% if @current_user.admin? %>
-          <%= link_to "Users Index", users_path %>
+    <div class="container">
+      <nav>
+        <%= link_to 'Home', root_path %>
+        <%= link_to 'Venues', venues_path %>
+        <% if @current_user.present? %>
+          <% if @current_user.admin? %>
+            <%= link_to "Users Index", users_path %>
+          <% end %>
+          <%= link_to "Profile", user_path(@current_user) %>
+          <%= link_to "Log Out #{@current_user.email}", login_path, :method => 'delete', :data => {:confirm => "Are you sure you want to log out?"}  %>
+          <%= link_to "Create New Venue", new_venue_path %>
+        <% else %>
+          <%= link_to 'Sign Up', new_user_path %>
+          <%= link_to 'Sign In', login_path %>
         <% end %>
-        <%= link_to "Profile", user_path(@current_user) %>
-        <%= link_to "Log Out #{@current_user.email}", login_path, :method => 'delete' %>
-        <%= link_to "Create New Venue", new_venue_path %>
-      <% else %>
-        <%= link_to 'Sign Up', new_user_path %>
-        <%= link_to 'Sign In', login_path %>
-      <% end %>
-    </nav>
-    <%= yield %>
+      </nav>
+      <%= yield %>
+    </div>
   </body>
 </html>

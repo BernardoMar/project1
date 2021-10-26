@@ -1,0 +1,16 @@
+<%= form_for @review do |f| %>
+
+  <%=f.label :name%>
+  <%=f.text_field :name%>
+
+  <%=f.label :message%>
+  <%=f.text_field :message%>
+
+  <%=f.label :rate%>
+  <%=f.number_field :rate%>
+
+  <%= f.label :venue_id %>
+  <%= f.select :venue_id, Venue.pluck(:name, :id)%>
+
+  <%= f.submit %>
+<% end %>

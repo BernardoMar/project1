@@ -5,13 +5,52 @@
 
 <p><%= @venue.address%></p>
 <p><%= @venue.phone%></p>
+
 <a href="<%= @venue.website %>">Visit Site</a>
 <a href="<%= @venue.insta %>">Instagram</a>
+
+
 <% if @venue.logo.present? %>
   <%= image_tag @venue.logo %>
 <% end %>
+
+
+
+<h3>Check <%= @venue.name %>'s menu:'</h3>
+<ul>
+  <% @venue.menus.each do |menu| %>
+    <li> <%= link_to menu.item, menu_path(menu.id) %> | <%= menu.category %> | <%= menu.price %> </li>
+  <% end %>
+</ul>
+
+<h3>Clients reviews: </h3>
+
+<% @venue.reviews.each do |review| %>
+  <p>Client name: <%= review.name %></p>
+  <p>Rate <%= review.rate %></p>
+  <p><%= review.message %></p>
+  <% if @current_user && @current_user.admin? %>
+    <%= link_to 'Delete', review, :method => 'delete', :data => {:confirm => "Do you want to delete #{review.name}'s review?'"} %>
+  <% end %>
+<% end %>
+
+<%= form_for @venue.reviews.new do |form| %>
+<%= hidden_field_tag 'review[venue_id]', @venue.id %>
+
+         <%= form.text_area :message %>
+         <%= form.text_area :name %>
+         <%= form.number_field :rate %>
+
+
+
+          <%= form.submit "Review"%>
+<% end %>
+
+<%# <%= link_to "Leave a Review", new_review_path %> %>
+
 <% if @current_user == @venue.user %>
   <%= link_to "Edit", edit_venue_path %>
+  <%= link_to "Add Menu Item", new_menu_path %>
   <% if @current_user.admin? %>
     <%= link_to "Delete", @venue, :method => 'delete', :data => {:confirm => "Confirm you want to delete #{@venue.name}"} %>
   <% end %>

@@ -9899,3 +9899,2592 @@ Completed 500 Internal Server Error in 34ms (ActiveRecord: 22.5ms)
 SyntaxError (/Users/bernardomartin/Projects/project01/project01/app/views/users/show.html.erb:6: syntax error, unexpected '\n', expecting '.' or &. or :: or '['):
   
 app/views/users/show.html.erb:6: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+Started GET "/" for ::1 at 2021-10-25 14:40:49 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 32.8ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/venues/new" for ::1 at 2021-10-25 14:40:56 +1100
+Processing by VenuesController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/new.html.erb within layouts/application
+  Rendered venues/_form.html.erb (24.7ms)
+  Rendered venues/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 77ms (Views: 44.4ms | ActiveRecord: 11.9ms)
+
+
+Started DELETE "/login" for ::1 at 2021-10-25 14:40:57 +1100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8MM4kX3er7tDlSO9SLysbAlgmfCyw53f5RX7gNzZ1t8E1sVaTPzy/pYhLj062x3WikNXOfGk7rJ76oMFeiRsig=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 14:40:57 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2021-10-25 14:40:58 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 14:40:59 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 14:41:00 +1100
+Processing by VenuesController#index as HTML
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (3.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 36.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/new" for ::1 at 2021-10-25 14:41:01 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 14:41:02 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2021-10-25 14:41:03 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 14:41:04 +1100
+Processing by VenuesController#index as HTML
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/venues/68" for ::1 at 2021-10-25 14:41:05 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:13
+  Rendered venues/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 42ms (Views: 36.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues/68" for ::1 at 2021-10-25 14:41:06 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:13
+  Rendered venues/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 48ms (Views: 43.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/venues/68" for ::1 at 2021-10-25 14:41:07 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:13
+  Rendered venues/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 14:41:07 +1100
+Processing by VenuesController#index as HTML
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 14:41:09 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2021-10-25 14:41:10 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:05:00 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 15:05:05 +1100
+Processing by VenuesController#index as HTML
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (3.9ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 37ms (Views: 30.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/venues/68" for ::1 at 2021-10-25 15:05:06 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mVenue Load (0.9ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:13
+  Rendered venues/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 35ms (Views: 28.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:05:08 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:05:19 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3uaBfOfd1QGK3cDOH1BFqmHCGASB4zFop8wNMt6ApQ6+JN4cVN01GKwsVh8rxHXMajKuSsBoKE9fgCDPEl3KKQ==", "email"=>"berni@ga.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "berni@ga.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 283ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:05:19 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2021-10-25 15:05:21 +1100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 74ms (Views: 67.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users" for ::1 at 2021-10-25 15:05:23 +1100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:05:25 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.6ms)
+
+
+  
+SyntaxError (/Users/bernardomartin/Projects/project01/project01/app/views/users/show.html.erb:6: syntax error, unexpected '\n', expecting '.' or &. or :: or '['):
+  
+app/views/users/show.html.erb:6: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+Started GET "/users/68" for ::1 at 2021-10-25 15:06:35 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 42ms (Views: 37.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/login" for ::1 at 2021-10-25 15:06:48 +1100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AFb5a5NOvZmU58PyKnN66yH9g2+iXJtX/oDci4MsNXv0QwSgomzg3EFTznJYFMtRot5NpuE76Dpgf6QOJdGPLg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:06:49 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:06:57 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bdpPuNSlgGItwlppIRaCeal2KJrWY28mtpCCGpgHfYiZz7Jz5YfdJ/h2V+lTcTPDKlXmU5UEHEsob/qfPvrH3Q==", "email"=>"bernie@at.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bernie@at.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:06:57 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:07:14 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KwYGOVRv4hgJJs689ZyCxvqqUHhzM7PAq6tfAkS+VkXfE/vyZU2/XdySwzyH+zN8eYmesTBUwK01VCeH4kPsEA==", "email"=>"bernie@ga.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bernie@ga.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 282ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:07:14 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:07:16 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 33.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:08:30 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 41ms (Views: 35.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2021-10-25 15:08:32 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.1ms)
+  Rendered users/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 52ms (Views: 43.6ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:08:41 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yjOHUfOPytvtOTkou+YcRfAjDDpJLNV+Wixqn0nOiYekxq4vsYiScHWxTvjViogOR9sgRtq1RLaFTRDDajec7g==", "user"=>{"name"=>"Bernardo"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 17ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:08:41 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 30.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:08:50 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 40.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2021-10-25 15:08:52 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:08:56 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZU231GeqsrgI48UVi9E8Ajhp3pXwtvQp03IlRI8cZVILuJ6qJa3qE5BrssXlvahJj5Hy6WMvZeEME18YrOVwOw==", "user"=>{"name"=>"Bernardo"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:08:56 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2021-10-25 15:14:52 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.3ms)
+  Rendered users/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 61ms (Views: 21.0ms | ActiveRecord: 27.8ms)
+
+
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:14:57 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S8nUrryhdOGKGB5lKQ6s59tevBhcZqgROwu068URc8QlPP3Q/qYsShKQabVHYjisbKaQZM//Odnkas635uhmrQ==", "user"=>{"name"=>"Bernardo"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 7ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:14:57 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:16:20 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 20.2ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2021-10-25 15:16:24 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.7ms)
+  Rendered users/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:16:30 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/JAqlVlLs8hwWf7V5DuXQOVGe+jDXgGCiVExGHS2mG6SZQPrG0zrY+jRiQWKVwMLUr5XlFDHkEpWMEtEV0+NBw==", "user"=>{"name"=>"Joseee"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 1.5ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x0000000108943e60>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:20:in `update'
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:16:46 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/JAqlVlLs8hwWf7V5DuXQOVGe+jDXgGCiVExGHS2mG6SZQPrG0zrY+jRiQWKVwMLUr5XlFDHkEpWMEtEV0+NBw==", "user"=>{"name"=>"Joseee"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 22ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:16:46 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2021-10-25 15:16:48 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.6ms)
+  Rendered users/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:16:56 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LCo45g4tk5hfXmBE5YX12pO1nzcvq8SItkbHu/YFZHtC3xGYTCrLM8fWF5SL6WGRJE2zS7wyVUBpJ73n1fxxEg==", "user"=>{"name"=>"Berniardo"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:16:56 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:17:15 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 17.5ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2021-10-25 15:17:17 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.5ms)
+  Rendered users/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:17:23 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oXmqNRc2oWooTQyF7V3E711RPJ47xNPq8j9moX8ZBYDPjINLVTH5wbDFe1WDMVCk6qkQ4qhdQiItXhz9XOAQ6Q==", "user"=>{"name"=>"Bernardo"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:17:23 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/login" for ::1 at 2021-10-25 15:17:32 +1100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CEAXqglNZEplQOKYJc1RtjyZg+6dvDInd0aB7M3Ukf38VephOG85D7D07xhXquAMv7pNJ97bQUrpuflpaykrqA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:17:32 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:17:41 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g3SU+hp1PQQ4ycWKs1auGVTsZewu0aDyMjLGaM2wPxl3YWkxK1dgQe19yArBMR+j18+rJW2205+szb7ta02FTA==", "email"=>"berni@ga.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "berni@ga.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 254ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:17:42 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2021-10-25 15:17:44 +1100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/login" for ::1 at 2021-10-25 15:17:56 +1100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bflv37XPhVyvxyY/QnRqxOdp5D1E8TmPza1l8ZA8Wl/x7JIUhO3YGXpzK78wE9t+ZEoq9AeWSuJTUh10NsHgCg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:17:56 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:18:07 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/u+MbY1hTgFNi2xq45cB4lhDr6efK1wl+o/ZABrEIzgK+nGmvEMTRJg/YeqR8LBY22BhbtxML0hkcKGFvDmZbQ==", "email"=>"vero@ga.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vero@ga.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 262ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:18:07 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/72" for ::1 at 2021-10-25 15:18:09 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/72/edit" for ::1 at 2021-10-25 15:18:13 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.6ms)
+  Rendered users/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/users/72" for ::1 at 2021-10-25 15:18:16 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xReikbMzxr0TXJBhMoCfJoQcSlLr1+ycT7+3ZNsF8J/b7WF5/V24Riez3GNGyacCefE0Eg2HJeOpE7LbWxQKhA==", "user"=>{"name"=>"Vero"}, "commit"=>"Update User", "id"=>"72"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+Unpermitted parameter: :name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "vero@ga.com"], ["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/72
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/72" for ::1 at 2021-10-25 15:18:16 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/login" for ::1 at 2021-10-25 15:20:03 +1100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"h3j5OryOq0goy1AdgWC2r06taZwB/3PXmMGtHGQoPeJzbQTxjaz2Df1/XZ3zBwcVzY6nVUKYALoGPtWZwtWHtw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:20:03 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:20:22 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uhQ8KXd2SZBdYQAgN4ebNHilzAL/xc67oQN7FJ94o+dOAcHiRlQU1YjVDaBF4CqO+4YCy7yivdY//AOROYUZsg==", "email"=>"bernie@ga.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bernie@ga.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 262ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:20:22 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:20:24 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 42ms (Views: 33.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2021-10-25 15:22:08 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.2ms)
+  Rendered users/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 25.2ms | ActiveRecord: 11.7ms)
+
+
+Started PATCH "/users/71" for ::1 at 2021-10-25 15:22:13 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qvejVd+pDKKhffWcIWpz7w3d9h8IU5prUUVuwpDqJRzEAoorna5UCTn1gkxPBuekuiXaY5vKC6OOJBSesxMwdQ==", "user"=>{"name"=>"Bernardito"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "bernie@ga.com"], ["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Update (4.1ms)[0m  [1m[33mUPDATE "users" SET "name" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["name", "Bernardito"], ["updated_at", "2021-10-25 04:22:13.514851"], ["id", 71]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 18ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/users/71" for ::1 at 2021-10-25 15:22:13 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 27ms (Views: 21.4ms | ActiveRecord: 3.8ms)
+
+
+Started DELETE "/login" for ::1 at 2021-10-25 15:22:23 +1100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UA95mm/93Z3KVts9rEr5pJCquijUMtLKB6ELusEaG/SkGoRRXt+A2B/i1r3eLUgeE4l04ZdVoaeZXnM/Z+ehoQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:22:23 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:22:36 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YLF52l2Y2gtHUlhRszC6Yv8D9KvFnUiuZFNh/BbU3xiUpIQRbLqHTpLmVdHBVwvYfCA6Yob6O8P6rBl5sCllTQ==", "email"=>"berni@ga.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "berni@ga.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:22:36 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2021-10-25 15:22:38 +1100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:24:39 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 41ms (Views: 20.2ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:24:52 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 43ms (Views: 20.0ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:24:54 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 15:39:12 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (1.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 70ms (Views: 24.7ms | ActiveRecord: 32.1ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 15:39:13 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:13
+  Rendered venues/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 37ms (Views: 30.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 15:40:12 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:8
+  Rendered venues/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 15:40:23 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:8
+  Rendered venues/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 15:40:59 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:8
+  Rendered venues/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/venues/Berni" for ::1 at 2021-10-25 15:41:01 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"Berni"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Venue with 'id'=Berni):
+  
+app/controllers/venues_controller.rb:34:in `show'
+Started GET "/venues/67" for ::1 at 2021-10-25 15:42:22 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:8
+  Rendered venues/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:42:24 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 15:42:57 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/venues/68" for ::1 at 2021-10-25 15:42:58 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:8
+  Rendered venues/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 15:43:30 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 15:43:31 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:9
+  Rendered venues/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:43:37 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:48:10 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 68]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:50:55 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 68]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:51:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 68]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 15:51:29 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:9
+  Rendered venues/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:51:31 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 68]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/venues/71" for ::1 at 2021-10-25 15:51:33 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:9
+  Rendered venues/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:51:34 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 68]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 15:51:35 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:9
+  Rendered venues/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/venues/73/edit" for ::1 at 2021-10-25 15:51:42 +1100
+Processing by VenuesController#edit as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:22
+  Rendering venues/edit.html.erb within layouts/application
+  Rendered venues/_form.html.erb (3.5ms)
+  Rendered venues/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/venues/73" for ::1 at 2021-10-25 15:51:49 +1100
+Processing by VenuesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dV4aeI/8HfSNFnR8fLiIEbqYUOtkJsTJRMLz/UFoe21CCRjpri9hjrc7uZ+CNd4uBL1ckp+3ZOXqpHEhs/gtlw==", "venue"=>{"name"=>"Chin Chin ", "address"=>"Paraguay 1593", "suburb"=>"Yerba Buena", "image"=>"https://www.chinchinrestaurant.com.au/melbourne/wp-content/uploads/sites/2/2019/06/gogo.png", "logo"=>"https://www.goodfood.com.au/content/dam/images/g/y/q/g/m/k/image.related.articleLeadNarrow.300x0.gypohk.png/1509720703462.jpg", "phone"=>"232323", "website"=>"https://www.chinchin.melbourne/", "insta"=>"https://www.chinchin.melbourne/"}, "commit"=>"Update Venue", "id"=>"73"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:28
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.7ms)
+
+
+  
+NameError (undefined local variable or method `venue' for #<VenuesController:0x000000010b07de18>
+Did you mean?  @venue):
+  
+app/controllers/venues_controller.rb:29:in `update'
+Started PATCH "/venues/73" for ::1 at 2021-10-25 15:52:30 +1100
+Processing by VenuesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dV4aeI/8HfSNFnR8fLiIEbqYUOtkJsTJRMLz/UFoe21CCRjpri9hjrc7uZ+CNd4uBL1ckp+3ZOXqpHEhs/gtlw==", "venue"=>{"name"=>"Chin Chin ", "address"=>"Paraguay 1593", "suburb"=>"Yerba Buena", "image"=>"https://www.chinchinrestaurant.com.au/melbourne/wp-content/uploads/sites/2/2019/06/gogo.png", "logo"=>"https://www.goodfood.com.au/content/dam/images/g/y/q/g/m/k/image.related.articleLeadNarrow.300x0.gypohk.png/1509720703462.jpg", "phone"=>"232323", "website"=>"https://www.chinchin.melbourne/", "insta"=>"https://www.chinchin.melbourne/"}, "commit"=>"Update Venue", "id"=>"73"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.1ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/venues_controller.rb:29
+  [1m[36mVenue Update (1.8ms)[0m  [1m[33mUPDATE "venues" SET "name" = $1, "updated_at" = $2 WHERE "venues"."id" = $3[0m  [["name", "Chin Chin "], ["updated_at", "2021-10-25 04:52:31.019973"], ["id", 73]]
+  ↳ app/controllers/venues_controller.rb:29
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/venues_controller.rb:29
+Redirected to http://localhost:3000/venues/73
+Completed 302 Found in 50ms (ActiveRecord: 33.6ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 15:52:31 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (2.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:9
+  Rendered venues/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/venues/73/edit" for ::1 at 2021-10-25 15:52:34 +1100
+Processing by VenuesController#edit as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:22
+  Rendering venues/edit.html.erb within layouts/application
+  Rendered venues/_form.html.erb (3.0ms)
+  Rendered venues/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/venues/73" for ::1 at 2021-10-25 15:52:39 +1100
+Processing by VenuesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DuQAsR3kJtcqqpm2XW2G3H6zh+Yz13LsaccSK4C7hyY5swIgPDdarRCHVFWj4NDjwJaLn8hG0sDHoZD3civR3A==", "venue"=>{"name"=>"Chin Chin Land", "address"=>"Paraguay 1593", "suburb"=>"Yerba Buena", "image"=>"https://www.chinchinrestaurant.com.au/melbourne/wp-content/uploads/sites/2/2019/06/gogo.png", "logo"=>"https://www.goodfood.com.au/content/dam/images/g/y/q/g/m/k/image.related.articleLeadNarrow.300x0.gypohk.png/1509720703462.jpg", "phone"=>"232323", "website"=>"https://www.chinchin.melbourne/", "insta"=>"https://www.chinchin.melbourne/"}, "commit"=>"Update Venue", "id"=>"73"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/venues_controller.rb:29
+  [1m[36mVenue Update (1.2ms)[0m  [1m[33mUPDATE "venues" SET "name" = $1, "updated_at" = $2 WHERE "venues"."id" = $3[0m  [["name", "Chin Chin Land"], ["updated_at", "2021-10-25 04:52:39.579776"], ["id", 73]]
+  ↳ app/controllers/venues_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/venues_controller.rb:29
+Redirected to http://localhost:3000/venues/73
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 15:52:39 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:9
+  Rendered venues/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/68" for ::1 at 2021-10-25 15:52:45 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 68]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/login" for ::1 at 2021-10-25 15:52:51 +1100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zuykw6sZSVFLxq/fkMmuPCjLEMtQi3P1RwfPCqLjT7I6+VkImjsUFJ5yol/irh+Gq+jeAhPsAJjZ+LePBB715w=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2021-10-25 15:52:51 +1100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-25 15:53:00 +1100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GvsEsUUpIPp12udcvFxn7BxqdGJZg5bg2Iw7LNw74Tju7vl6dAt9v6Bu6tzOO9ZWn0m6qxrk5Y1Gc0OpesZbbQ==", "email"=>"vero@ga.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vero@ga.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 269ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:53:01 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/72" for ::1 at 2021-10-25 15:53:03 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 72]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues/74" for ::1 at 2021-10-25 15:53:06 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:16
+  Rendered venues/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/venues/74/edit" for ::1 at 2021-10-25 15:53:10 +1100
+Processing by VenuesController#edit as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:22
+  Rendering venues/edit.html.erb within layouts/application
+  Rendered venues/_form.html.erb (2.6ms)
+  Rendered venues/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 21.1ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/venues/74" for ::1 at 2021-10-25 15:53:15 +1100
+Processing by VenuesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uwQF+YVACIjBm60vzoTSG1IGtYMhpyFJrjEC9s4RNBbvISgqIpFGKMT4MHdXpHsCeQAcN6nPWbjgQcCfhUfD/g==", "venue"=>{"name"=>"Juaz", "address"=>"JJOJOJ", "suburb"=>"JOJOJ", "image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABLFBMVEUAAAD////oBYng4OCtra1ra2ugoKC/v78cHBwwMDDR0dF8fHyxsbHJyclDQ0M2NjaUlJSMjIxMTEz5+fliYmI7Ozvn5+e4uLimpqbGxsbvBY1bW1vyBY/Y2NjnAIXxa7nmAH10dHTy8vJISEirBGV8A0kpKSmBgYFnZ2eYA1oVFRXuT6jwXrGPj49cXFzgBYQsARpYAjTGBHWjA2DsO53qKJT84+/tWaRIASqNA1NAASbVBX6ZA1prAz/wYrTuU6spEh/DVZX1q85AU0zs3uXxh7oUAQv4yd/zmsTvdrE5Qj4gARMoARdldG7YssRSATH3w9u+MnuOMGBOMD4MMCQjMCvUdaTWhKvfWp3vebP2t9WDSGVcKUe9U5HhYqyQP25FHjUuFCNwMVaVQXIRffXpAAAOCUlEQVR4nO2dCXcaRxLHuwGBuGSEECBOgWSQQZITGzl2FEmJkzjJJrtOsps9E+f6/t9h5+iqrp4ZkNDUMPK8+b+XPOhpa/qnvqq7q0tCpEqVKlWqVKlSpUqVKlWqVKlSpUqVKlWqVKlSpUqVKmrVa61q6SA3ncRdkGg0y+1JUHPqe7xVybmqNCBpG5JyNZ1vivmO9I/GtCL5iWWVWnkUCY9PbWmoubP0OeIUdW6d7wATtzBtG9POyE9sQWI9IiRDs6b0amTmyBPCrlt4TZgVArgLhHCr66ZpwqqYYo0RwrL398mubd1AJSnNMsJK30e4LwMISy0voRTZXABhMx814TgA0NIRyUIJcyUf4aMgwmrFR7iTxxZNCLOkI0eiajCggchEmMfK3iTh+TLAvtSZmAj7AkegDRJmlxEe9PvchBI75wYJ6waV0SUn8pybsLs73jhhRb8+aw/v9b4uZCvLTdjelrNNE+qpENokztqViQQLjoswK2R504T67bZN1aZTY1+M4d1chFIcFDZMqLuhPVM15e", "logo"=>"https://www.goodfood.com.au/content/dam/images/g/y/q/g/m/k/image.related.articleLeadNarrow.300x0.gypohk.png/1509720703462.jpg", "phone"=>"2322323", "website"=>"https://www.chinchin.melbourne/", "insta"=>"https://www.chinchin.melbourne/"}, "commit"=>"Update Venue", "id"=>"74"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/venues_controller.rb:29
+  [1m[36mVenue Update (0.6ms)[0m  [1m[33mUPDATE "venues" SET "name" = $1, "updated_at" = $2 WHERE "venues"."id" = $3[0m  [["name", "Juaz"], ["updated_at", "2021-10-25 04:53:15.165603"], ["id", 74]]
+  ↳ app/controllers/venues_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/venues_controller.rb:29
+Redirected to http://localhost:3000/venues/74
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/venues/74" for ::1 at 2021-10-25 15:53:15 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:16
+  Rendered venues/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:53:19 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 15:53:47 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (2.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 38ms (Views: 31.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 15:56:46 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  Rendered venues/show.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `menu' for #<Venue:0x000000011e0e4c18>
+Did you mean?  menus):
+    10: <% end %>
+    11: <a href="<%= @venue.website %>">Visit Site</a>
+    12: <a href="<%= @venue.insta %>">Instagram</a>
+    13: <%= link_to 'See Menu', @venue.menu %>
+    14: <% if @venue.logo.present? %>
+    15:   <%= image_tag @venue.logo %>
+    16: <% end %>
+  
+app/views/venues/show.html.erb:13:in `_app_views_venues_show_html_erb__208954658692619049_87460'
+Started GET "/venues/73" for ::1 at 2021-10-25 15:57:16 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/menus" for ::1 at 2021-10-25 15:57:20 +1100
+Processing by MenusController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mMenu Load (4.9ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:3
+  Rendered menus/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 43ms (Views: 22.3ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 15:57:50 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 15:57:51 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  Rendered venues/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `menu' for #<Venue:0x0000000106be6110>
+Did you mean?  menus):
+    10: <% end %>
+    11: <a href="<%= @venue.website %>">Visit Site</a>
+    12: <a href="<%= @venue.insta %>">Instagram</a>
+    13: <%= link_to 'See Menu', menu_path(@venue.menu) %>
+    14: <% if @venue.logo.present? %>
+    15:   <%= image_tag @venue.logo %>
+    16: <% end %>
+  
+app/views/venues/show.html.erb:13:in `_app_views_venues_show_html_erb__208954658692619049_88240'
+Started GET "/venues/73" for ::1 at 2021-10-25 15:58:00 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/menus/73" for ::1 at 2021-10-25 15:58:03 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 15:58:08 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 15:58:11 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 15:58:12 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 16:00:25 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 65ms (Views: 24.1ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 16:00:27 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 16:00:29 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 10.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `venue' for nil:NilClass):
+    1: <h1> <%= @manu.venue.name %>'s menu: </h1>
+    2: 
+    3: <h2>Check this out:</h2>
+  
+app/views/menus/show.html.erb:1:in `_app_views_menus_show_html_erb___4238086332024935354_93700'
+Started GET "/venues/67" for ::1 at 2021-10-25 16:01:28 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 16:01:29 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.5ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 16:09:41 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (1.6ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (1.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 46.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `venue' for nil:NilClass):
+    2: 
+    3: <h2>Check this out:</h2>
+    4: <ul>
+    5:   <% @menus.venue.each do |menu| %>
+    6:     <li><%= menu.item %></li>
+    7:   <% end %>
+    8: </ul>
+  
+app/views/menus/show.html.erb:5:in `_app_views_menus_show_html_erb___4238086332024935354_98720'
+Started GET "/menus/67" for ::1 at 2021-10-25 16:13:42 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 22.8ms)
+
+
+  
+NoMethodError (undefined method `venue_id' for nil:NilClass):
+  
+app/controllers/menus_controller.rb:11:in `show'
+Started GET "/menus/67" for ::1 at 2021-10-25 16:13:54 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 31.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `menu' for 69:Integer):
+    2: 
+    3: <h2>Check this out:</h2>
+    4: <ul>
+    5:   <% @venue.menu do |menu| %>
+    6:     <li><%= menu.item %></li>
+    7:   <% end %>
+    8: </ul>
+  
+app/views/menus/show.html.erb:5:in `_app_views_menus_show_html_erb___4238086332024935354_108420'
+Started GET "/menus/67" for ::1 at 2021-10-25 16:15:35 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 32.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Menu:0x000000010cab4cf0>):
+    1: <h1> <%= @menu.venue.name %>'s menu: </h1>
+    2: 
+    3: <h2>Check this out:</h2>
+    4: <% @menu.each do |menu| %>
+    5:   <li><%= menu.item %></li>
+    6: <% end %>
+  
+app/views/menus/show.html.erb:4:in `_app_views_menus_show_html_erb___4238086332024935354_113300'
+Started GET "/menus/67" for ::1 at 2021-10-25 16:15:45 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> <%= @menu.venue.name %>'s menu: </h1>
+    2: 
+    3: <h2>Check this out:</h2>
+    4: <% @menus.each do |menu| %>
+    5:   <li><%= menu.item %></li>
+    6: <% end %>
+  
+app/views/menus/show.html.erb:4:in `_app_views_menus_show_html_erb___4238086332024935354_113860'
+Started GET "/menus/67" for ::1 at 2021-10-25 16:17:13 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 11.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `venue' for nil:NilClass):
+    1: <h1> <%= @menu.venue.name %>'s menu: </h1>
+    2: 
+    3: <h2>Check this out:</h2>
+    4: 
+  
+app/views/menus/show.html.erb:1:in `_app_views_menus_show_html_erb___4238086332024935354_118700'
+Started GET "/menus/67" for ::1 at 2021-10-25 16:17:38 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.6ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  [1m[36mMenu Load (0.4ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/show.html.erb:5
+  Rendered menus/show.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 86ms (Views: 35.4ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 16:32:09 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (1.7ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (1.0ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."user_id" = $1[0m  [["user_id", 72]]
+  ↳ app/views/menus/show.html.erb:5
+  Rendered menus/show.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 96ms (Views: 33.2ms | ActiveRecord: 47.8ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 16:32:51 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.6ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (3.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."user_id" = $1 LIMIT $2[0m  [["user_id", 72], ["LIMIT", 11]]
+  ↳ /Users/bernardomartin/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendered menus/show.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 5.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `menus' for #<Venue::ActiveRecord_Associations_CollectionProxy:0x000000010c866a98>):
+    2: 
+    3: <h2>Check this out:</h2>
+    4: <ul>
+    5: <% @current_user.venues.menus do |menu| %>
+    6:   <li><%= menu.item %></li>
+    7: <% end %>
+    8: </ul>
+  
+app/views/menus/show.html.erb:5:in `_app_views_menus_show_html_erb___4238086332024935354_128120'
+Started GET "/menus/67" for ::1 at 2021-10-25 16:33:16 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.4ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 16:33:30 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.9ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 16:33:31 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 26.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 16:33:33 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.5ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 16:33:35 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues/68" for ::1 at 2021-10-25 16:33:37 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/menus/68" for ::1 at 2021-10-25 16:33:39 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (1.2ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 16:33:52 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/venues/70" for ::1 at 2021-10-25 16:33:54 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/menus/70" for ::1 at 2021-10-25 16:33:56 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.4ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 404 Not Found in 3ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=70):
+  
+app/controllers/menus_controller.rb:10:in `show'
+Started GET "/venues/70" for ::1 at 2021-10-25 16:34:07 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 16:34:10 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/venues/69" for ::1 at 2021-10-25 16:34:11 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/menus/69" for ::1 at 2021-10-25 16:34:13 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=69):
+  
+app/controllers/menus_controller.rb:10:in `show'
+Started GET "/venues/69" for ::1 at 2021-10-25 16:34:15 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 28.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 16:34:17 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 16:34:18 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/menus/73" for ::1 at 2021-10-25 16:34:21 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 404 Not Found in 4ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=73):
+  
+app/controllers/menus_controller.rb:10:in `show'
+Started GET "/menus/73" for ::1 at 2021-10-25 16:34:52 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 404 Not Found in 3ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=73):
+  
+app/controllers/menus_controller.rb:10:in `show'
+Started GET "/menus/73" for ::1 at 2021-10-25 16:34:54 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=73):
+  
+app/controllers/menus_controller.rb:10:in `show'
+Started GET "/venues" for ::1 at 2021-10-25 16:35:08 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 16:35:10 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 16:35:11 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 30.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/menus/73" for ::1 at 2021-10-25 16:35:13 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=73):
+  
+app/controllers/menus_controller.rb:10:in `show'
+Started GET "/menus/73" for ::1 at 2021-10-25 16:36:38 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:10
+Completed 404 Not Found in 32ms (ActiveRecord: 20.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=73):
+  
+app/controllers/menus_controller.rb:10:in `show'
+Started GET "/venues" for ::1 at 2021-10-25 16:42:31 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (2.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 86ms (Views: 34.8ms | ActiveRecord: 38.6ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 16:42:34 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/menus/new" for ::1 at 2021-10-25 16:54:29 +1100
+Processing by MenusController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 69ms (Views: 22.4ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/menus/new" for ::1 at 2021-10-25 16:55:34 +1100
+Processing by MenusController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/_form.html.erb (2.8ms)
+  Rendered menus/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/menus/new" for ::1 at 2021-10-25 16:55:59 +1100
+Processing by MenusController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/_form.html.erb (1.9ms)
+  Rendered menus/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/menus/new" for ::1 at 2021-10-25 16:56:00 +1100
+Processing by MenusController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/_form.html.erb (2.1ms)
+  Rendered menus/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 17:00:36 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (2.5ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 51ms (Views: 24.4ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/venues/73" for ::1 at 2021-10-25 17:00:41 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/menus/73" for ::1 at 2021-10-25 17:00:46 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/bernardomartin/Projects/project01/project01/app/views/menus/show.html.erb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/views/menus/show.html.erb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/menus/73" for ::1 at 2021-10-25 17:03:30 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 13.1ms)
+
+
+  
+SyntaxError (/Users/bernardomartin/Projects/project01/project01/app/views/menus/show.html.erb:13: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/views/menus/show.html.erb:13: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/menus/73" for ::1 at 2021-10-25 17:04:14 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/bernardomartin/Projects/project01/project01/app/views/menus/show.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/menus/show.html.erb:10: syntax error, unexpected `ensure', expecting end-of-input
+Started GET "/menus/73" for ::1 at 2021-10-25 17:04:26 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `venue' for nil:NilClass):
+    1: <h1> <%= @menu.venue.name %>'s menu: </h1>
+    2: 
+    3: <h2>Check this out:</h2>
+    4: <ul>
+  
+app/views/menus/show.html.erb:1:in `_app_views_menus_show_html_erb___4238086332024935354_153400'
+Started GET "/menus/73" for ::1 at 2021-10-25 17:05:03 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (1.9ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19
+Completed 404 Not Found in 39ms (ActiveRecord: 29.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=73):
+  
+app/controllers/menus_controller.rb:19:in `show'
+Started GET "/" for ::1 at 2021-10-25 17:05:29 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 17:05:30 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 55ms (Views: 38.5ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 17:05:36 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (1.2ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 17:05:37 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.9ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 34ms (Views: 22.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 17:06:45 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/venues/69" for ::1 at 2021-10-25 17:06:48 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 37ms (Views: 29.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/menus/69" for ::1 at 2021-10-25 17:06:50 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.5ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19
+Completed 404 Not Found in 4ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=69):
+  
+app/controllers/menus_controller.rb:19:in `show'
+Started GET "/venues/69" for ::1 at 2021-10-25 17:06:58 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/menus/69" for ::1 at 2021-10-25 17:07:00 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.6ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19
+Completed 404 Not Found in 3ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Menu with 'id'=69):
+  
+app/controllers/menus_controller.rb:19:in `show'
+Started GET "/venues/69" for ::1 at 2021-10-25 17:07:02 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 17:07:04 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (1.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/venues/68" for ::1 at 2021-10-25 17:07:05 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/menus/68" for ::1 at 2021-10-25 17:07:06 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.4ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.5ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 22.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/venues" for ::1 at 2021-10-25 17:09:56 +1100
+Processing by VenuesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering venues/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+  ↳ app/views/venues/index.html.erb:3
+  Rendered venues/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/venues/67" for ::1 at 2021-10-25 17:10:08 +1100
+Processing by VenuesController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mVenue Load (0.4ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/venues_controller.rb:34
+  Rendering venues/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/venues/show.html.erb:17
+  Rendered venues/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/menus/67" for ::1 at 2021-10-25 17:10:13 +1100
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mMenu Load (0.6ms)[0m  [1m[34mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT  "venues".* FROM "venues" WHERE "venues"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/menus/show.html.erb:1
+  Rendered menus/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 1.3ms)
+
+

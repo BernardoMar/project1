@@ -9,6 +9,14 @@ Rails.application.routes.draw do
   delete '/login' => 'sessions#destroy'
 
   resources :venues
-  
+
   resources :menus
+
+  resources :reviews, :except => [:edit]
+
+  # resources :venues do
+  #   member do
+  #     post 'create_review'
+  #   end
+  # end
 end

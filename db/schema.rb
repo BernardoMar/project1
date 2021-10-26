@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_24_231038) do
+ActiveRecord::Schema.define(version: 2021_10_26_222137) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 2021_10_24_231038) do
     t.text "item"
     t.text "category"
     t.float "price"
+    t.integer "venue_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "image"
+    t.text "description"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.text "message"
+    t.text "name"
+    t.integer "rate"
     t.integer "venue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -43,6 +54,13 @@ ActiveRecord::Schema.define(version: 2021_10_24_231038) do
     t.string "password_digest"
     t.boolean "admin", default: false
     t.text "name"
+    t.text "surname"
+    t.date "dob"
+    t.text "address"
+    t.text "city"
+    t.text "state"
+    t.integer "zip"
+    t.integer "phone"
   end
 
   create_table "venues", force: :cascade do |t|
