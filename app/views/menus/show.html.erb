@@ -6,7 +6,7 @@
 <p>Price: <%= number_to_currency(@menu.price)%></p>
 <nav>
   <% if @current_user == @menu.venue.user %>
-  <%= link_to "Edit", edit_menu_path %>
-  <%= link_to "Delete", @menu, :method => 'delete', :data => {:confirm => "Confirm you want to delete #{@menu.item}"}  %>
+  <%= link_to "Edit Meal", edit_menu_path %>
+  <%= link_to "Delete Meal", @menu, :method => 'delete', :data => {:confirm => "Confirm you want to delete #{@menu.item}"}  %>
   <% end %>
 </nav>
