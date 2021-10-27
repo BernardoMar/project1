@@ -1,4 +1,7 @@
-<h1>Session</h1>
-<% if @current_user.present? %>
- <h2>Welcome back <%= @current_user.email %></h2>
-<% end %>
+<h1 class="heading">The Foodie Bible</h1>
+
+<div class="logos_home">
+  <% @venues.each do |venue| %>
+    <%= link_to image_tag(venue.logo, :class => 'logo_home'), venue_path(venue.id) if venue.image.present? %>
+  <% end %>
+</div>

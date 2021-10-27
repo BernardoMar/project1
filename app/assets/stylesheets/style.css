@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.container {
+  background-color: white;
+}
+
+.heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  margin: 40px auto;
+  text-align: left;
+  background-image: url(/assets/home_page.jpg);
+  height: 300px;
+  background-size: cover;
+  line-height: 300px;
+  padding-left: 76px;
+  color: #FFFFEA;
+}
+
+.logo_home {
+  max-height: 12em;
+}
+
+#carouselExampleIndicators {
+  height: 100%;
+  width: 100%;
+}
+.carousel-indicators {
+  margin-bottom: 8px;
+}
+.carousel-indicators>li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-inner {
+  max-height: 300px;
+}
+.carousel-item {
+  text-align: center;
+}
+.parent {
+  min-height: 200px;
+}
+.carousel-item img {
+  display: block;
+  margin: auto;
+  opacity: 0.6;
+}
+
+.logos_home {
+  margin-top: 40px;
+  display: inline;
+}
