@@ -3,7 +3,7 @@
   <li> Full Name: <%= @user.name %> <%= @user.surname %> </li>
   <li> Email: <%= @user.email %> </li>
   <li> Phone Number: <%= number_to_phone(@user.phone, :area_code => true) %> </li>
-  <li> Address: <%= @user.addres%> </li>
+  <li> Address: <%= @user.address%> </li>
   <li> City: <%= @user.city%>, <%= @user.state %> (<%= @user.zip%>) </li>
   <li> Contact Number: <%= @user.phone %> </li>
   <% @current_user.venues.each do |venue| %>
