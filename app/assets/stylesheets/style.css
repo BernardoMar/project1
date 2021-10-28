@@ -163,6 +163,9 @@ a:hover{
   height: 135px;
   padding-left: 10px;
 }
+.logo_container {
+  min-height: 130px;
+}
 
 .venue_details p {
   margin: 4px auto;

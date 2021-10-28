@@ -1,7 +1,9 @@
 <h1 class="heading heading_venue"></h1>
 <div class="venue_heading">
   <% if @venue.logo.present? %>
+  <div class="logo_container">
     <%= image_tag @venue.logo, :class => 'logo_show' %>
+  </div>
   <% else %>
     <h2 class="title"><%= @venue.name %></h2>
   <% end %>
