@@ -1,15 +1,17 @@
-<h1>Welcome to my app</h1>
+<h1 class="title">Welcome to The Foodie Bible</h1>
 
-<h3>Sign Up!</h3>
+<h3 class="title_small">Sign Up to join us at the Foodie Bible!</h3>
 
-<p>Fill the form for instant access:</p>
 
 <% if @user.errors.any? %>
-  <ol>
-    <% @user.errors.full_messages.each do |msg| %>
-    <li> <%= msg %></li>
-    <% end %>
-  </ol>
+  <div class="error_message">
+    <p>There was a problem signing you up:</p>
+    <ol>
+      <% @user.errors.full_messages.each do |msg| %>
+      <li> <%= msg %>. Please try again.</li>
+      <% end %>
+    </ol>
+  </div>
 <% end %>
 
 <%= form_for @user do |f| %>
@@ -25,5 +27,7 @@
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation, :class => 'form-control' %>
   </div>
-  <%= f.submit "Sign up!", :class => "btn btn-info" %>
+  <div class="contain_btn">
+    <%= f.submit "Sign up!", :class => "btn btn-info" %>
+  </div>
 <% end %>
