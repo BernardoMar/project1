@@ -73,11 +73,11 @@
 
 <% if @current_user.present? %>
   <nav class="bottom_page">
-    <% if @current_user.admin? %>
-      <%= link_to "Delete Venue", @venue, :method => 'delete', :class => 'danger', :data => {:confirm => "Confirm you want to delete #{@venue.name}"} %>
-      <% if @current_user == @venue.user %>
-        <%= link_to "Edit Venue", edit_venue_path %>
-        <%= link_to "Add Menu Item", new_menu_path %>
+    <% if @current_user == @venue.user %>
+      <%= link_to "Edit Venue", edit_venue_path %>
+      <%= link_to "Add Menu Item", new_menu_path %>
+      <% if @current_user.admin? %>
+        <%= link_to "Delete Venue", @venue, :method => 'delete', :class => 'danger', :data => {:confirm => "Confirm you want to delete #{@venue.name}"} %>
       <% end %>
     <% end %>
   </nav>

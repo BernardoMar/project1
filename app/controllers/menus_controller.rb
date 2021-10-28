@@ -12,7 +12,7 @@ class MenusController < ApplicationController
 
   def create
     @menu = Menu.create menu_params
-    redirect_to menus_path
+    redirect_to venue_path(@menu.venue.id)
   end
 
   def show
