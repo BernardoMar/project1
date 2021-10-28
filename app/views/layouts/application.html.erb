@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project01</title>
+    <title>The Foodie Bible</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -16,11 +16,10 @@
         <%= link_to 'Venues', venues_path %>
         <% if @current_user.present? %>
           <% if @current_user.admin? %>
-            <%= link_to "Users Index", users_path %>
+            <%= link_to "Admin", users_path %>
           <% end %>
-          <%= link_to "Profile", user_path(@current_user) %>
-          <%= link_to "Log Out #{@current_user.email}", login_path, :method => 'delete', :data => {:confirm => "Are you sure you want to log out?"}  %>
           <%= link_to "Create New Venue", new_venue_path %>
+          <%= link_to "Profile", user_path(@current_user) %>
         <% else %>
           <%= link_to 'Sign Up', new_user_path %>
           <%= link_to 'Sign In', login_path %>

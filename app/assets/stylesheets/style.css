@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Major+Mono+Display&family=Pacifico&family=Sacramento&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+body {
+  background-color: #A37D00;
+}
 
 .container {
-  background-color: white;
+  background-color: #2E3138;
+  margin: 0 auto;
+  padding: 7px;
+  height: 100vh;
 }
 
 .heading {
   font-family: 'Pacifico', cursive;
   font-size: 60px;
-  margin: 40px auto;
+  margin: 0px -7px 40px;
   text-align: left;
   background-image: url(/assets/home_page.jpg);
   height: 300px;
@@ -19,36 +26,69 @@
 
 .logo_home {
   max-height: 12em;
+  margin: 7px;
 }
 
-#carouselExampleIndicators {
-  height: 100%;
-  width: 100%;
+.title {
+  font-family: 'Alata', sans-serif;
+  color: #DADDD8;
+  font-size: 35px;
+  margin: 30px auto;
+
 }
-.carousel-indicators {
-  margin-bottom: 8px;
-}
-.carousel-indicators>li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-}
+
 .carousel-inner {
   max-height: 300px;
 }
-.carousel-item {
-  text-align: center;
+
+.carousel {
+  margin: -7px;
 }
-.parent {
-  min-height: 200px;
-}
-.carousel-item img {
-  display: block;
-  margin: auto;
-  opacity: 0.6;
-}
+
 
 .logos_home {
   margin-top: 40px;
   display: inline;
+  text-align: center;
+  margin: auto;
+}
+
+.venue_image {
+  max-height: 300px;
+}
+.venue_image img{
+  line-height: 300px;
+}
+nav {
+  height: 40px;
+  text-align: left;
+  margin: -7px;
+}
+nav a{
+  height: 25px;
+  margin: 3px;
+  padding: 4px;
+  text-align: center;
+  color: #DADDD8;
+  border-radius: 3px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+nav a:hover {
+  background-color: #E0CA3C;
+  color: white;
+  text-decoration: none;
+}
+p {
+  color: black;
+}
+.venues_link {
+  text-decoration: none;
+  color: #DADDD8;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.venues_link:hover {
+  color: #E0CA3C;
+  text-decoration: none;
 }

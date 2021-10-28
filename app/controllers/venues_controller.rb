@@ -5,6 +5,10 @@ class VenuesController < ApplicationController
 
   def index
     @venues = Venue.all
+    @venue1 = Venue.find(113)
+    @venue2 = Venue.find(114)
+    @venue3 = Venue.find(118)
+
   end
 
   def new
@@ -16,7 +20,7 @@ class VenuesController < ApplicationController
     @current_user.venues << @venue
     redirect_to venues_path
   end
-  
+
   def create_review
     @venue = Venue.find params[:id]
     @review = @venue.review.build(params[:venue_id])

@@ -1,3 +1,6 @@
+<nav>
+    <%= link_to "Log Out", login_path, :method => 'delete', :data => {:confirm => "Are you sure you want to log out?"}  %>
+</nav>
 <h1>USER DETAILS</h1>
 <ul>
   <li> Full Name: <%= @user.name %> <%= @user.surname %> </li>

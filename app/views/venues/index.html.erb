@@ -1,5 +1,3 @@
-<h1>All Venues</h1>
-
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -9,17 +7,17 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
           <div class="parent d-flex justify-content-center">
-            <img src="/assets/chicken.jpeg" class="d-block w-100 carousel_img">
+            <%= link_to image_tag('/assets/chinchin.jpeg', :class => "d-block w-100 carousel_img" ), venue_path(@venue1.id)  %>
           </div>
         </div>
       <div class="carousel-item">
           <div class="parent d-flex justify-content-center">
-            <img src="/assets/coffee.jpeg" class="d-block w-100">
+            <%= link_to image_tag("/assets/palermo.jpeg", :class => "d-block w-100 carousel_img" ), venue_path(@venue2.id) if @venue2.image.present? %>
           </div>
       </div>
       <div class="carousel-item">
           <div class="parent d-flex justify-content-center">
-          <img src="/assets/sushi.jpeg" class="d-block w-100">
+          <%= link_to image_tag("/assets/lune.jpeg", :class => "d-block w-100 carousel_img" ), venue_path(@venue3.id) %>
           </div>
       </div>
     </div>
@@ -33,6 +31,8 @@
     </a>
 </div>
 
+<h2 class="title">All Venues</h2>
+
 <% @venues.each do |venue| %>
-  <p> <%= link_to venue.name, venue_path(venue.id) %> </p>
+  <p> <%= link_to venue.name, venue_path(venue.id), :class => 'venues_link' %> | <%= venue.suburb%></p>
 <% end %>
