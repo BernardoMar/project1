@@ -1,16 +1,27 @@
 <nav>
-    <%= link_to "Log Out", login_path, :method => 'delete', :data => {:confirm => "Are you sure you want to log out?"}  %>
+    <%= link_to "Log Out", login_path, :method => 'delete', :class => 'log_out danger', :data => {:confirm => "Are you sure you want to log out?"}  %>
 </nav>
-<h1>USER DETAILS</h1>
-<ul>
-  <li> Full Name: <%= @user.name %> <%= @user.surname %> </li>
-  <li> Email: <%= @user.email %> </li>
-  <li> Phone Number: <%= number_to_phone(@user.phone, :area_code => true) %> </li>
-  <li> Address: <%= @user.address%> </li>
-  <li> City: <%= @user.city%>, <%= @user.state %> (<%= @user.zip%>) </li>
-  <li> Contact Number: <%= @user.phone %> </li>
-  <% @user.venues.each do |venue| %>
-    <li> Venue owned: <%= link_to venue.name, venue %> </li>
-  <% end %>
-</ul>
-<%= link_to 'Edit Details', edit_user_path %>
+<div class="profile_block">
+  <div class="heading_profile">
+    <h1 class="title">USER DETAILS</h1>
+  </div>
+  <p><%= @user.name %> <%= @user.surname %></p>
+  <ul>
+    <li> | Email: <%= @user.email %> </li>
+    <li> | Phone Number: <%= number_to_phone(@user.phone, :area_code => true) %> </li>
+    <li> | Address: <%= @user.address%> </li>
+    <li> | City: <%= @user.city%>, <%= @user.state %> (<%= @user.zip%>) </li>
+    <li> | Contact Number: <%= @user.phone %> </li>
+  </ul>
+  <div class="venues_owned">
+    <p>Venues owned: </p>
+  </div>
+  <ul>
+    <% @user.venues.each do |venue| %>
+      <li>| <%= link_to venue.name, venue, :class => 'profile_links' %> </li>
+    <% end %>
+  </ul>
+  <div class="center_link">
+    <%= link_to 'Edit Profile Details', edit_user_path, :class => 'edit_profile' %>
+  </div>
+</div>

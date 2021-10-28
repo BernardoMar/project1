@@ -1,6 +1,15 @@
 <h1 class="heading">The Foodie Bible</h1>
+<div class='container_image'>
+  <img src="/assets/text_frame.png" alt="image" class="message_home">
+  <p class="very_difficult">
+    "The Foodie Bible" is my second project during my Software Engineering course at GA Australia!
+    <br>In this site you'll be able to review and find some great restaurants and cafes around Melbourne! Plus you get to add more venues to the list!!!
+    <br>Special thanks to Rowena, Pat and Joel!
+  </p>
+</div>
 
-<div class="logos_home">
+<div class="container_logos">
+  <h2 class="title">Our Venues</h2>
   <% @venues.each do |venue| %>
     <%= link_to image_tag(venue.logo, :class => 'logo_home'), venue_path(venue.id) if venue.image.present? %>
   <% end %>

@@ -51,15 +51,15 @@
     <h2 class="title_dark">Leave a Review</h2>
     <%= form_for @venue.reviews.new do |form| %>
     <%= hidden_field_tag 'review[venue_id]', @venue.id %>
-          <div class="form-group">
+          <div class="form-group review_text">
              <%= form.label :message %>
              <%= form.text_area :message, :class => 'form-control' %>
           </div>
-           <div class="form-group">
+           <div class="form-group review_text">
              <%= form.label :name %>
              <%= form.text_area :name, :class => 'form-control' %>
           </div>
-           <div class="form-group">
+           <div class="form-group review_text">
              <%= form.label :rate %>
              <%= form.number_field :rate, :class => 'form-control' %>
           </div>
@@ -71,12 +71,14 @@
   </div>
 </div>
 
-<% if @current_user == @venue.user %>
+<% if @current_user.present? %>
   <nav class="bottom_page">
-    <%= link_to "Edit Venue", edit_venue_path %>
-    <%= link_to "Add Menu Item", new_menu_path %>
     <% if @current_user.admin? %>
       <%= link_to "Delete Venue", @venue, :method => 'delete', :class => 'danger', :data => {:confirm => "Confirm you want to delete #{@venue.name}"} %>
+      <% if @current_user == @venue.user %>
+        <%= link_to "Edit Venue", edit_venue_path %>
+        <%= link_to "Add Menu Item", new_menu_path %>
+      <% end %>
     <% end %>
   </nav>
 <% end %>

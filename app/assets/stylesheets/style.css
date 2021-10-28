@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comic+Neue:wght@300&family=Major+Mono+Display&family=Pacifico&family=Sacramento&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comic+Neue:wght@300&family=Indie+Flower&family=Major+Mono+Display&family=Pacifico&family=Sacramento&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
 
 body {
-  /* background-color: #FFE592; */
-  background-image: url('https://image.freepik.com/free-vector/hand-drawn-delicious-food-background_52683-16136.jpg');
+  background-color: #E8DBC5;
 }
 
 .container {
@@ -10,6 +9,7 @@ body {
   margin: 0 auto;
   padding: 7px;
   height: 100100%;
+  position: relative;
 }
 
 .heading {
@@ -32,8 +32,32 @@ body {
   background-image: url('/assets/page_name.jpeg');
 }
 
+.container_image{
+  position: relative;
+  text-align: center;
+}
+
+.message_home {
+  margin-left: 0 auto;
+  max-width: 600px;
+  display: inline-block;
+}
+
+.very_difficult {
+  position: absolute;
+    top: 110px;
+    left: 349px;
+    max-width: 386px;
+    text-align: justify;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+.container_logos {
+  margin-top: 40px;
+  text-align: center;
+}
 .logo_home {
-  max-height: 12em;
+  max-height: 10em;
   margin: 7px;
 }
 
@@ -43,7 +67,6 @@ body {
   font-size: 35px;
   margin: 30px auto;
   text-align: left;
-
 }
 
 .title_dark {
@@ -79,7 +102,7 @@ body {
 nav {
   height: 40px;
   text-align: left;
-  margin: -7px;
+  margin: 5px;
 }
 nav a{
   height: 25px;
@@ -274,4 +297,79 @@ a:hover{
 
 .form-group {
   color: #DADDD8;
+}
+
+.review_text {
+  color: #2E3138;
+}
+
+.log_out {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.profile_block {
+  margin: 15px auto;
+  padding: 10px;
+  max-width: 600px;
+  background-color: #DADDD8;
+  text-align: left;
+  border-radius: 4px;
+}
+.profile_block li{
+  list-style-type: none;
+  text-align: left;
+}
+.heading_profile {
+  background-color: #2E3138;
+  margin: 0 -10px;
+  width: 600px;
+  height: 60px;
+}
+
+.venues_owned {
+  background-color: #2E3138;
+  margin: 0 -10px;
+  width: 600px;
+  height: 30px;
+  padding-left: 10px;
+}
+.venues_owned p{
+  color: #DADDD8;
+}
+.profile_links {
+  color: #2E3138;
+}
+.center_link {
+  text-align: center;
+}
+.edit_profile{
+  background-color: #79ADDC;
+  border-radius: 4px;
+  border: none;
+}
+
+.edit_profile:hover {
+  color: white;
+  background-color: #EEC643;
+}
+
+.admin_view {
+  max-width: 300px;
+  display: inline-block;
+  margin: 35px;
+}
+.title_small {
+  font-family: 'Alata', sans-serif;
+  color: #DADDD8;
+  font-size: 20px;
+  margin: 30px auto;
+  text-align: left;
+}
+.heading_admin_view {
+  background-color: #2E3138;
+  margin: 0 -10px;
+  width: 300px;
+  height: 30px;
 }
