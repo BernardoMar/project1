@@ -16,7 +16,7 @@
         <%= link_to 'Venues', venues_path %>
         <% if @current_user.present? %>
           <% if @current_user.admin? %>
-            <%= link_to "Admin", users_path %>
+            <%= link_to "Admin", users_path, :class => 'danger' %>
           <% end %>
           <%= link_to "Create New Venue", new_venue_path %>
           <%= link_to "Profile", user_path(@current_user) %>

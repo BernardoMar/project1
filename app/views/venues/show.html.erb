@@ -1,3 +1,4 @@
+<h1 class="heading heading_venue"></h1>
 <div class="venue_heading">
   <% if @venue.logo.present? %>
     <%= image_tag @venue.logo, :class => 'logo_show' %>
@@ -8,7 +9,7 @@
     <p> 📍 <%= @venue.address%>, <%= @venue.suburb %></p>
     <p>  ☎️ <%= @venue.phone%></p>
     <p> <%= link_to "Visit Website", @venue.website, :class => 'website_link'  %> </p>
-    <p><%= link_to image_tag('http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png', :class => 'insta_logo'), @venue.insta if @venue.insta.present? %></p>
+    <p><%= link_to image_tag('/assets/insta_logo.png', :class => 'insta_logo'), @venue.insta if @venue.insta.present? %></p>
   </div>
 </div>
 
@@ -28,7 +29,7 @@
 </div>
 
 <div class="reviews">
-    <h2 class="title">Clients reviews: </h2>
+    <h2 class="title">Client's reviews: </h2>
 
     <% @venue.reviews.each do |review| %>
       <div class="review_block">
@@ -40,11 +41,11 @@
         </div>
 
         <% if @current_user && @current_user.admin? %>
-            <%= link_to 'Delete Review', review, :method => 'delete', :data => {:confirm => "Do you want to delete #{review.name}'s review?'"} %>
+            <%= link_to 'Delete Review', review, :method => 'delete', :class => 'admin_link danger', :data => {:confirm => "Do you want to delete #{review.name}'s review?'"} %>
         <% end %>
       </div>
     <% end %>
-</div>
+
 
   <div class="insert_review">
     <h2 class="title_dark">Leave a Review</h2>
@@ -62,16 +63,20 @@
              <%= form.label :rate %>
              <%= form.number_field :rate, :class => 'form-control' %>
           </div>
-          <%= form.submit "Review"%>
+          <div class="contain_btn">
+            <%= form.submit "Leave Review", :class => 'btn btn-info'%>
+          </div>
     <% end %>
 
   </div>
-
+</div>
 
 <% if @current_user == @venue.user %>
-  <%= link_to "Edit", edit_venue_path %>
-  <%= link_to "Add Menu Item", new_menu_path %>
-  <% if @current_user.admin? %>
-    <%= link_to "Delete", @venue, :method => 'delete', :data => {:confirm => "Confirm you want to delete #{@venue.name}"} %>
-  <% end %>
+  <nav class="bottom_page">
+    <%= link_to "Edit Venue", edit_venue_path %>
+    <%= link_to "Add Menu Item", new_menu_path %>
+    <% if @current_user.admin? %>
+      <%= link_to "Delete Venue", @venue, :method => 'delete', :class => 'danger', :data => {:confirm => "Confirm you want to delete #{@venue.name}"} %>
+    <% end %>
+  </nav>
 <% end %>

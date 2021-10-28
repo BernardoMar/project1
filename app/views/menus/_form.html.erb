@@ -1,24 +1,29 @@
 <%= form_for @menu do |f| %>
-
-  <%=f.label :item%>
-  <%=f.text_field :item%>
-
-  <%=f.label :description%>
-  <%=f.text_field :description%>
-
-  <%=f.label :category%>
-  <%=f.text_field :category%>
-
-  <%=f.label :price%>
-  <%=f.number_field :price%>
-
-  <%= f.label :image, "Meal Photo"%>
-  <%= f.url_field :image %>
-
-  <%= f.label :venue_id %>
-  <%= f.select :venue_id, @current_user.venues.pluck(:name, :id), :include_blank => true  %>
-
-
-  <%= f.submit %>
+  <div class="form-group">
+    <%=f.label :item%>
+    <%=f.text_field :item, :class => 'form-control'%>
+  </div>
+  <div class="form-group">
+    <%=f.label :description%>
+    <%=f.text_field :description, :class => 'form-control'%>
+  </div>
+  <div class="form-group">
+    <%=f.label :category%>
+    <%=f.text_field :category, :class => 'form-control'%>
+  </div>
+  <div class="form-group">
+    <%=f.label :price%>
+    <%=f.number_field :price, :class => 'form-control'%>
+  </div>
+  <div class="form-group">
+    <%= f.label :image, "Meal Photo"%>
+    <%= f.url_field :image, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :venue_id %>
+    <%= f.select :venue_id, @current_user.venues.pluck(:name, :id), :include_blank => true, :class => 'form-control'  %>
+  </div>
+  <div class="contain_btn">
+    <%= f.submit "Submit", :class => "btn btn-info"  %>
+  </div>
 <% end %>
-<!-- In line 12 I need that the selection only includes options that this user owns -->

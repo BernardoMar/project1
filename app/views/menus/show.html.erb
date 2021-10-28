@@ -1,9 +1,17 @@
-<h1> <%= @menu.item %> </h1>
-<% if @menu.image.present? %>
-  <%= image_tag @menu.image %>
-<% end %>
-<p> <%= @menu.description %></p>
-<p>Price: <%= number_to_currency(@menu.price)%></p>
+<div class="menu_heading">
+  <%= link_to image_tag(@menu.venue.logo, :class => 'logo_menu'), venue_path(@menu.venue.id) %>
+</div>
+<div class="menu menu_show">
+  <h2> <%= @menu.item %> </h2>
+    <p> <%= @menu.description %></p>
+    <p>Price: <%= number_to_currency(@menu.price)%></p>
+  <% if @menu.image.present? %>
+    <div class="img_menu">
+      <%= image_tag @menu.image %>
+    </div>
+  <% end %>
+
+</div>
 <nav>
   <% if @current_user == @menu.venue.user %>
   <%= link_to "Edit Meal", edit_menu_path %>
