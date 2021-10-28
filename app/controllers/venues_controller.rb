@@ -5,9 +5,9 @@ class VenuesController < ApplicationController
 
   def index
     @venues = Venue.all
-    @venue1 = Venue.find(113)
-    @venue2 = Venue.find(114)
-    @venue3 = Venue.find(118)
+    @venue1 = Venue.find_by name: 'Chin Chin'
+    @venue2 = Venue.find_by name: 'Palermo'
+    @venue3 = Venue.find_by name: 'Lune Croissanterie'
 
   end
 

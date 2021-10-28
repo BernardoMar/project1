@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Major+Mono+Display&family=Pacifico&family=Sacramento&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comic+Neue:wght@300&family=Major+Mono+Display&family=Pacifico&family=Sacramento&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
 
 body {
   background-color: #A37D00;
@@ -8,7 +8,7 @@ body {
   background-color: #2E3138;
   margin: 0 auto;
   padding: 7px;
-  height: 100vh;
+  height: 100%;
 }
 
 .heading {
@@ -34,7 +34,15 @@ body {
   color: #DADDD8;
   font-size: 35px;
   margin: 30px auto;
+  text-align: left;
 
+}
+
+.title_dark {
+  font-family: 'Alata', sans-serif;
+  color: ##2E3138;
+  font-size: 35px;
+  margin: 30px auto;
 }
 
 .carousel-inner {
@@ -52,12 +60,13 @@ body {
   text-align: center;
   margin: auto;
 }
-
 .venue_image {
-  max-height: 300px;
+  max-width: 500px;
 }
-.venue_image img{
-  line-height: 300px;
+
+.image_container {
+  margin: 70px auto 40px auto;
+  text-align: center;
 }
 nav {
   height: 40px;
@@ -88,7 +97,99 @@ p {
   font-family: 'Major Mono Display', monospace;
 }
 
-.venues_link:hover {
+
+a:hover{
   color: #E0CA3C;
   text-decoration: none;
+}
+
+.logo_show {
+  max-width: 200px;
+}
+
+.venue_heading {
+  position: relative;
+  margin: -7px;
+  padding-left: 15px;
+  margin-top: 40px;
+}
+
+.venue_details {
+  position: absolute;
+  left: 220px;
+  top: 5px;
+  height: 135px;
+  padding-left: 10px;
+}
+
+.venue_details p {
+  margin: 4px auto;
+  color: #DADDD8;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.insta_logo {
+  max-width: 30px;
+}
+
+.website_link {
+  color: #DADDD8;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+
+.menu {
+  margin: 0 auto;
+  max-width: 800px;
+  min-height: 400px;
+  background-image: url('/assets/menu_background.jpeg');
+  border-radius: 6px;
+  background-size: cover;
+  padding: 40px;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 35px;
+  color: #EEE5E9;
+
+}
+.menu li{
+  list-style-type: none;
+}
+.menu h2{
+  font-size: 65px;
+}
+
+.menu_link {
+  color: #EEE5E9;
+}
+
+.reviews {
+  text-align: center;
+  padding-left: 10px;
+
+}
+
+.review_block {
+  display: block;
+  margin: 10px auto;
+  background-color: #DADDD8;
+  max-width: 900px;
+  padding: 7px;
+  font-family: 'Comic Neue', cursive;
+}
+.review_header {
+  text-align: left;
+  font-weight: bolder;
+}
+.message {
+  text-align: center;
+  font-style: italic;
+}
+
+.insert_review {
+  max-width: 900px;
+  background-color: #DADDD8;
+  color: #2E3138;
+  padding: 7px;
+  margin: 0 auto;
 }
