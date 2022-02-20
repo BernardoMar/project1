@@ -1,7 +1,7 @@
   class VenueFacade
 
     def allVenues
-  #    @params = params
+
       @allvenues = Venue.all
 
     end
