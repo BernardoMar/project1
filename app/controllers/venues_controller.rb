@@ -1,13 +1,12 @@
+
 class VenuesController < ApplicationController
   before_action :check_for_login, :only => [:new,:create]
   before_action :check_for_admin, :only => [:delete]
   # before_action :check_for_owner, :only => [:edit,:update]
 
   def index
-    @venues = Venue.all
-    @venue1 = Venue.find_by name: 'Chin Chin'
-    @venue2 = Venue.find_by name: 'Palermo'
-    @venue3 = Venue.find_by name: 'Lune Croissanterie'
+
+    @facade = VenueFacade.new
 
   end
 

@@ -1,25 +1,24 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <% @facade.adVenues.each_with_index do |venue, n|%>
+        <li data-target="#carouselExampleIndicators" data-slide-to="#{n}" class="#{'active' if n == 0}"></li>
+      <% end %>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
           <div class="parent d-flex justify-content-center">
-            <%= link_to image_tag('/assets/chinchin.jpeg', :class => "d-block w-100 carousel_img" ), venue_path(@venue1.id)  %>
+            <%= link_to image_tag(@facade.adVenues.first.image, :class => "d-block w-100 carousel_img" ), venue_path(@facade.adVenues.first.id)  %>
           </div>
         </div>
-      <div class="carousel-item">
-          <div class="parent d-flex justify-content-center">
-            <%= link_to image_tag("/assets/palermo.jpeg", :class => "d-block w-100 carousel_img" ), venue_path(@venue2.id) if @venue2.image.present? %>
+        <% @facade.adVenues.drop(1).each do |v|%>
+          <div class="carousel-item">
+              <div class="parent d-flex justify-content-center">
+                <%= link_to image_tag(v.image, :class => "d-block w-100 carousel_img" ), venue_path(v.id) if v.image.present? %>
+              </div>
           </div>
-      </div>
-      <div class="carousel-item">
-          <div class="parent d-flex justify-content-center">
-          <%= link_to image_tag("/assets/lune.jpeg", :class => "d-block w-100 carousel_img" ), venue_path(@venue3.id) %>
-          </div>
-      </div>
+        <%end%>
+
+
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -33,6 +32,6 @@
 
 <h2 class="title">All Venues</h2>
 
-<% @venues.each do |venue| %>
+<% @facade.allVenues.each do |venue| %>
   <p> <%= link_to venue.name, venue_path(venue.id), :class => 'venues_link' %> | <%= venue.suburb%></p>
 <% end %>

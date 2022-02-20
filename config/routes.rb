@@ -14,9 +14,5 @@ Rails.application.routes.draw do
 
   resources :reviews, :except => [:edit]
 
-  # resources :venues do
-  #   member do
-  #     post 'create_review'
-  #   end
-  # end
+
 end
